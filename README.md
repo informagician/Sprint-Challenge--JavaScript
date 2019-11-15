@@ -30,13 +30,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+map creates a new array for the results of embedded function which runs for every item in the array.
+foreach runs a function for every item in the array and provides the results in the same array. foreach by itself returns undefined.
+
 2. What is the difference between a function and a method?
+
+function can be standalone (housed in the window object) or can be homed in an object and thats when we call it a method. 
 
 3. What is closure?
 
+closure means nested functions can access variables from outside and variables directly inside the funciton but not from inside the within functions.
+variables can have local and global context. global context means the window object.
+
 4. Describe the four rules of the 'this' keyword.
 
+global - when this is not housed in an object, it will refer to window object as its closest parent. this situation may cause some unexpected behaviour, therefore we can use strict mode to avoide it.
+implicit - when this is housed in an object, it will refer to its closest parent object.
+explicit - when this is housed in nested objects or sibling objects, to specify which object to refer to, we use call,apply and bind to explicitly refer to targeted object. 
+new - using new on a function including this, creates a new object, changes the this in funciton to refer to newly created object and creates an implicit return.
+
 5. Why do we need super() in an extended class?
+
+super is used to access/inherit and call all methods and attributes housed in parent object.
 
 ## Project Set up
 
