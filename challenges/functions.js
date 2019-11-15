@@ -37,7 +37,12 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 // Explain in your own words why nestedfunction can access the variable internal.
 
 // Explanation: 
-
+/*
+functions in javascript have an internal and hidden object called lexical environment. lexical environment object has two characteristics:
+1- it has an implicit this to refer to local variables within the lexical env
+2- it has a reference to outer code (outside of functions own {...})
+the first characteristic allow nested functions access their internal variables.
+*/
 
 const external = "I'm outside the function";
 
